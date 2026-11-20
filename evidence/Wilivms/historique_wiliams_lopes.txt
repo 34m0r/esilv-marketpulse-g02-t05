@@ -1,0 +1,16 @@
+  802    git checkout main && git pull\n  git reset --hard hackathon-submission\n  git push --force-with-lease origin main
+  803     cd ~/Desktop && git clone https://github.com/Wilivms/near-revenue-audit.git near-revenue-audit-reset && cd near-revenue-audit-reset && git log --oneline -2
+  804  git reset --hard hackathon-submission && git push --force-with-lease origin main && git log --oneline -1
+  805    git checkout main && git pull\n  git reset --hard hackathon-submission\n  git push --force-with-lease origin main
+  806  git log --format="%an <%ae>"
+  807  git clone https://github.com/Wilivms/near-revenue-audit\ncd near-revenue-audit\ngit shortlog -sne --all
+  808  git branch
+  809  python3 - <<'EOF'\np = "README.md"\ns = open(p, encoding="utf-8").read()\nblock = "## Run MarketPulse\n\nRun the application from the project root:\n\n```bash\npython src/main.py\n```\n\n"\ns = s.replace("## Installation", block + "## Installation", 1)\nopen(p, "w", encoding="utf-8").write(s)\nEOF
+  810  git diff\npython src/main.py
+  811  git add README.md\ngit commit -m "docs: add Run MarketPulse section to README"\ngit push -u origin $(git branch --show-current)
+  812  git diff
+  813  git diff.
+  814  diff
+  815  diff
+  816  diff
+  817  history
