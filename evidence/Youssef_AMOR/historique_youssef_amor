@@ -1,0 +1,16 @@
+ 1103  git branch -D demo2
+ 1104  GIT BRANCH
+ 1105  \tgit branch
+ 1106  git switch youssef-amor
+ 1107  git diff
+ 1108  git add src/main.py
+ 1109  git commit -m "feat: improve marketpulse output"
+ 1110  git config --global user.name "Youssef"
+ 1111  git config --global user.email youssef.amor@edu.devinci.fr
+ 1112  git commit -m "feat: improve marketpulse output"
+ 1113  git add src/main.py
+ 1114  git commit -m "feat: improve marketpulse output"
+ 1115  git branch
+ 1116  git add
+ 1117  git add TEAM.md
+ 1118  git commit -m "feat: improve marketpulse output"
