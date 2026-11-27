@@ -1,0 +1,29 @@
+  150  git clone https://github.com/34m0r/esilv-marketpulse-g02-t05
+  151  git pull https://github.com/34m0r/esilv-marketpulse-g02-t05
+  152  git clone https://github.com/34m0r/esilv-marketpulse-g02-t05
+  153  cd esilv-marketpulse-g02-t05
+  154  git branch ferdinand-robichon
+  155  git switch ferdinand-robichon
+  156  git diff
+  157  git branch ferdinand-robichon
+  158  git branch
+  159  git commit -m "ferdi"
+  160  hitsory > historique_ferdinand
+  161  git commit -m "ferdi"
+  162  git diff
+  163  git add src/main.py
+  164  git commit -m "ferdi"
+  165  git push
+  166  git push --set-upstream origin ferdinand-robichon
+  170  python src/main.py
+  171  jupyter nbconvert --to notebook --execute notebooks/00_python_fundamentals.ipynb
+  172  jupyter nbconvert --to notebook --execute notebooks/00_td02_sandbox.ipynb
+  173  jupyter nbconvert --to script notebooks/00_python_fundamentals.ipynb
+  174  jupyter nbconvert --to script notebooks/00_td02_sandbox.ipynb
+  175  jupyter nbconvert --to python notebooks/00_python_fundamentals.ipynb
+  176  jupyter nbconvert --to python notebooks/00_td02_sandbox.ipynb
+  177  python notebooks/00_td02_sandbox.py
+  178  python notebooks/00_python_fundamentals.py
+  179  git fetch origin
+  180  git log --oneline -3 origin/main
+  181  git status
