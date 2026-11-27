@@ -52,3 +52,28 @@ def fetch_yahoo_prices(
         })
 
     return rows
+
+
+def fetch_prices_for_ticker(
+    ticker,
+    period="1mo",
+    interval="1d",
+):
+    """
+    Retrieve prices using only the MarketPulse ticker (e.g. 'AAPL' or 'SP500').
+
+    Raises:
+        ValueError: If the ticker is not in YAHOO_SYMBOL_MAPPING.
+    """
+    if ticker not in YAHOO_SYMBOL_MAPPING:
+        raise ValueError(
+            f"Unknown ticker '{ticker}'. "
+            f"Supported tickers: {', '.join(YAHOO_SYMBOL_MAPPING)}."
+        )
+
+    return fetch_yahoo_prices(
+        symbol=YAHOO_SYMBOL_MAPPING[ticker],
+        canonical_ticker=ticker,
+        period=period,
+        interval=interval,
+    )
