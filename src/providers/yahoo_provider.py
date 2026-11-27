@@ -77,3 +77,21 @@ def fetch_prices_for_ticker(
         period=period,
         interval=interval,
     )
+
+
+def main():
+    """Display the instrument and the benchmark over the same 1 month / daily window."""
+    print("MarketPulse - Yahoo Finance stage (remote data)")
+    print("Lookback : 1 month | Interval : Daily")
+    print()
+    for role, ticker in [("Instrument", "AAPL"), ("Benchmark", "SP500")]:
+        rows = fetch_prices_for_ticker(ticker, period="1mo", interval="1d")
+        print(f"{role:<10} : {ticker} ({YAHOO_SYMBOL_MAPPING[ticker]})")
+        print(f"  Observations : {len(rows)}  ({rows[0]['date']} -> {rows[-1]['date']})")
+        print(f"  First close  : {rows[0]['close']:.2f}")
+        print(f"  Last close   : {rows[-1]['close']:.2f}")
+        print()
+
+
+if __name__ == "__main__":
+    main()
