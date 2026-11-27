@@ -206,10 +206,27 @@ The instructor starter repository does not necessarily contain every later-stage
 
 ## Run MarketPulse
 
-Run the application from the project root:
+From a clean clone, on Linux or Codespaces:
 
 ```bash
+./scripts/run.sh            # install, run the checks, print the snapshot
+./scripts/run.sh dashboard  # same, then open http://127.0.0.1:8050
+```
+
+Manual run from the project root:
+
+```bash
+python -m pip install -r requirements.txt
 python src/main.py
+python src/dashboard.py
+```
+
+Checks (also run by GitHub Actions on every push):
+
+```bash
+python tests/validate_analytics.py
+python tests/validate_bloomberg_provider.py
+python tests/validate_yahoo_provider.py   # needs internet, real Yahoo data
 ```
 
 ## Installation

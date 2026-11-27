@@ -1,0 +1,17 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python tests/validate_analytics.py
+      - run: python tests/validate_bloomberg_provider.py
+      - run: python src/main.py
+      - run: python -c "from src.dashboard import create_app; create_app(); print('dashboard OK')"
