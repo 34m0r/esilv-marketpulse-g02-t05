@@ -1,3 +1,4 @@
-# External dependencies will be added progressively during the labs.
-# TD01/TD02 intentionally use only the Python standard library.
-yfinance
+# MarketPulse direct dependencies
+yfinance==1.8.0
+dash==4.5.1
+plotly==7.2.0
