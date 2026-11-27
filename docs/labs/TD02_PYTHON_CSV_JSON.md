@@ -58,16 +58,16 @@ At the end of TD02, you should be able to:
 TD02 is complete when MarketPulse:
 
 ```text
-[ ] still runs with python src/main.py
-[ ] loads instruments.json
-[ ] loads prices.csv
-[ ] separates AAPL and SP500 rows
-[ ] has 21 observations for each series
-[ ] displays the first close for each series
-[ ] displays the last close for each series
-[ ] converts close values to numeric form before numerical use
-[ ] uses reusable summary logic
-[ ] has meaningful Python changes ready for TD03 Git work
+[x] still runs with python src/main.py
+[x] loads instruments.json
+[x] loads prices.csv
+[x] separates AAPL and SP500 rows
+[x] has 21 observations for each series
+[x] displays the first close for each series
+[x] displays the last close for each series
+[x] converts close values to numeric form before numerical use
+[x] uses reusable summary logic
+[x] has meaningful Python changes ready for TD03 Git work
 ```
 
 No return calculation is required.
